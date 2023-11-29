@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for job now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Job Application <span>(Web)</span></h1>
+    <form action="#">
+        <div class="smallcontainer">
+            <div class="left">
+                <label for="fname">
+                    <h2>First Name</h2><br>
+                </label>
+                <input type="text" id="fname" placeholder="Enter First Name....." required><br>
+            </div>
+            <div class="right">
+                <label for="lname">    
+                    <h2>Last Name</h2><br>
+                </label>
+                <input type="text" id="lname" required placeholder="Enter Last Name.....">
+            </div>
+        </div>
+        <div class="smallcontainer">
+            <div class="left">
+                <label for="mail">
+                    <h2>Email</h2><br>
+                </label>
+                <input type="email" id="mail" required placeholder="Enter Email.....">
+            </div>
+            <div class="right">
+                <label for="jrole">
+                    <h2>Job Role</h2><br>
+                </label>
+                <select name="job_role" id="jrole" required>
+                    <option value="">Select a Job Role</option>
+                    <option value="Backend">Backend Developer</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Full stack">Full Stack Developer</option>
+                <option value="ui_ux">Ui Ux Designer</option>
+                </select>
+            </div>
+        </div>
+        <div class="emailaddress">
+            <label for="address">
+                <h2>Enter Address</h2><br>
+            </label>
+            <textarea name="address" id="address" cols="20" rows="8" required></textarea>
+        </div>
+        <div class="smallcontainer">
+            <div class="left">
+                <label for="city">
+                    <h2>City</h2><br>
+                </label>
+                <input type="text" id="city" required placeholder="Enter City.....">
+            </div>        
+            <div class="right">
+                <label for="pincode">
+                    <h2>Pincode</h2><br>
+                </label>
+                <input type="text" id="pincode" required placeholder="Enter Pincode.....">
+            </div>
+        </div>
+        <div class="smallcontainer">
+            <div class="left">
+                <label for="date">
+                    <h2>Select Date</h2><br>
+                </label>
+                <input type="date" value="2023-10-22" id="date" required>
+            </div>
+            <div class="right">
+                <label for="upload">
+                    <h2>Upload your CV</h2><br>
+                </label>
+            <input type="file" id="upload" required><br>
+            </div>
+        </div>
+        <div class="but">
+            <button type="submit">Apply Now</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
