@@ -1,0 +1,259 @@
+.loadingbar{
+    height: 0.2vh;
+    background-color: var(--main-bg-color);
+    animation: lba 5s linear 0.8s 1 normal;
+}
+@keyframes lba{
+    0%  {width: 0vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    20% {width: 20vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    40% {width: 40vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    60% {width: 60vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    80% {width: 80vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    98% {width: 100vw;
+        background-color: rgba(37, 37, 95, 0.651);}
+    100% {visibility:hidden;}
+}
+header{
+    display: flex;
+    background-color:var(--main-bg-color);
+    color: white;
+    justify-content: center;
+    max-width: 100vw;
+    height: 10vh;
+}
+.navbar{
+    min-height: 5.5vh;
+    display: flex;
+    align-items: center;
+}
+.headerlogo{
+    margin-top: 0.5rem;
+    max-width: 5rem;
+}
+#explore{
+    font-size: 0.7rem;
+    display: block;
+}
+#explore:hover{
+    text-decoration: underline;
+}
+.plus1{
+    color: yellow;
+}
+input[type="search"]{
+    text-align: center;
+    max-width: 35vw;
+    min-width: 30vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin-left: 1em;
+    outline: none;
+    border: 0;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+button.login{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    margin-left: 1.5em;
+    height: 4vh;
+    color: rgb(95, 95, 211);
+    width: 7vw;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+#searchbutton{
+    border-radius: 40%;
+    width: 40px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 2px;
+    background: transparent;
+    border: 0;
+    margin-right: 1em;
+}
+#searchimage{
+    width: 30px;
+    height: 30px;
+}
+button.search:hover{
+    background-color: white;
+    }
+nav ul{
+    max-height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    padding: 0px 23px;
+    list-style: none;
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------Header properties end here------------------------------------------------------------------------------------ */
+
+.separator {
+    opacity: 0.5
+}
+.separatortwo {
+    margin-top: 8vh;
+    opacity: 0.5
+}
+#coverimage{
+    width: 70vw;
+    margin: 5vh auto;
+    border-radius: 1vh;
+}
+h2{
+    font-weight: 900;
+    font-size: 1.9vw;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    margin-bottom: 5vh;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.cards img {
+    border-radius: 1rem;
+}
+div.cards a{
+    text-decoration: none;
+    color: black;
+}
+div.cards p{
+    margin-top: 2vh;
+}
+h4{
+    color: black;
+    font-size: 1.5vw;
+    margin: 2vw 0;
+}
+.extrainfo p {
+    font-size: 0.9vw;
+}
+.extrainfo{
+    margin: 1vw 4vw;
+}
+/* -----------------------------------------------------------------------------------Main Properties end here-------------------------------------------------------------------------------------------------------------------- */
+footer{
+    min-height: 45vh;
+    padding: 2em;
+    min-width: 98vw;
+    max-width: 100vw;
+    background-color: #172337;
+}
+footer h5{
+    color: #878787;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+footer a[href="#"]:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+footer pre{
+    color: white;
+}
+footer span{
+    color: white;
+}
+#griditem5{    
+    padding-left: 2rem;
+    border-left: 1px solid #878787;
+}
+.extra{
+    min-height: 8vh;
+    max-width: 100vw;
+    margin-top: 10rem;
+    border-top: 1px solid #878787;
+}
+div.container3{
+    display: flex;
+}
+#griditem1{
+    margin-right: 8rem;
+}
+#griditem2{
+    margin-right: 8rem;
+}
+#griditem3{
+    margin-right: 8rem;
+}
+#griditem4{
+    margin-right: 9rem;
+}
+footer div span a[href="!"] {
+    margin-right: 5rem;
+}
+span img{
+    margin-left: 20rem;
+}
+#sn1{
+    margin-right: 3rem;
+}
+#sn2{
+    margin-right: 3rem;
+}
+#sn3{
+    margin-right: 3rem;
+}
+#sn4{
+    margin-right: 3rem;
+}
+#sn5{
+    margin-right: 3rem;
+}
+.cards{
+    display: flex;
+}
+.aliasghar {
+    width: 100%;
+}
+/* -----------------------------------------------------------------------------Footer-properties-ends-here----------------------------------------------------------------------------------------------------------------------- */
+
+/* Responsivness Properties Are As Under */
+
+@media only screen and (max-width: 700px){
+    button.login{
+        width: 4rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    input[type="search"]{
+        max-width: 50vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cards{
+        overflow: scroll;
+    }
+    footer{
+        width: 100vw;
+        overflow: scroll;
+    }
+    footer div {
+        width: 100vw;
+    }
+    #searchbutton{
+        display: none;
+    }
+    #searchimage{
+        display: none;
+    }
+}

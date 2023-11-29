@@ -1,0 +1,198 @@
+@font-face {
+    font-family: open sans bold;
+    src: url('./media/OpenSans-bold.ttf');
+}
+@font-face {
+    font-family: lora regular;
+    src: url('./media/Lora-Regular.ttf');
+}
+@font-face {
+    font-family: open sans light;
+    src: url('./media/OpenSans-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('./media/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 42vh;
+}
+header hr{
+    width: 7.5%;
+    height: 4px;
+    border: 0;
+    border-radius: 2px;
+    background-image: linear-gradient(white, white);
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+.logocontainer{
+    padding-top: 20px;
+}
+a.logo{
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: open sans bold;
+
+}
+.main_center{
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_center h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    font-family: open sans bold;
+}
+.main_center h3{
+    font-family: open sans light;
+    font-size: 24px;
+}
+.logo:hover{
+    color: #D1E3F6;
+}
+
+/* ************************************************************* Header Properties End Here*********************************************************************************************************** */
+p{
+    font-family: lora regular;
+}
+.container{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+main h2 {
+    font-family: open sans bold;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #333333;
+}
+.child {
+    width: 50%;
+    padding: 0 20px;
+}
+main p {
+    font-size: 20px;
+}
+.containera {
+    display: flex;
+}
+.bluebutton {
+    color: white;
+    padding: 4px 15px;
+    border: 1px solid #379cdf;
+    background-color: #379cdf;
+    border-radius: 60px;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    margin: 20px 10px;
+    height: 110px;
+}
+.whitebutton{
+    color: black;
+    padding: 4px 15px;
+    border: 0.2px solid rgb(139, 139, 139);
+    background-color: white;
+    border-radius: 60px;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    margin: 20px 10px;
+    height: 110px;
+    overflow: clip;
+}
+.bluebutton:hover {
+    background-color: #207CD5;
+}
+.bluebutton img{
+    padding-top: 12px;
+}
+.whitebutton img {
+    padding-top: 8px;
+}
+.bold {
+    font-family: open sans bold;
+    margin: 5px auto;
+    font-size: 16px;
+}
+.regular {
+    font-family: open sans light;
+    font-size: 14px;
+}
+.greenbutton {
+    color: white;
+    text-decoration: none;
+    background-color: #46B798;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    display: inline-block;
+}
+.green hr {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    opacity: 0.1;
+}
+.lastpara {
+    width: 85%;
+    margin: 10px auto;
+}
+.lastpara h3{
+    font-family: open sans bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+footer hr{
+    opacity: 0.1;
+    margin: 40px 0;
+}
+footer {
+    text-align: center;
+    height: 23vh;
+    font-family: open sans light;
+}
+.containerfooter {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+footer p {
+    font-size: 14px;
+}
+.containerfooter a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #0C8AA5;
+}
+footer p a{
+    color: black;
+}
+footer h3 {
+    margin: 15px auto;
+    color: #333333;
+    font-family: open sans bold;
+}
+.transparent {
+    opacity: 0.5;
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.logoone img {
+    width: 20vw;
+}
+.linksone ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.linksone a {
+    color: #6E6D6D;
+    text-decoration: none;
+}
+.linksone span {
+    color: black;
+}
+nav > i {
+    display: none;
+}
+.linksone a:hover {
+    color: black;
+}
+.btnstart a {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 5px 10px grey;
+    transition: 0.3s ease-in-out;
+}
+.btnstart a:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    box-shadow: none;
+    transition: .6s;
+}

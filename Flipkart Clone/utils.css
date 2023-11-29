@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Microbe&family=Ubuntu:ital@1&display=swap');
+*{
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik Microbe', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+:root {
+    --main-bg-color: #2874F0;
+}
