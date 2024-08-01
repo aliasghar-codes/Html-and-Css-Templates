@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Click Button</h1>
+
+    <div class="dice">
+      <p>Player 1</p>
+      <img class="img1" src="">
+    </div>
+
+    <div class="dice">
+      <p>Player 2</p>
+      <img class="img2" src="">
+    </div>
+
+    <button>Click Me</button>
+  </div>
+
+  <footer>
+    www 🎲 App Brewery 🎲 com
+  </footer>
+
+  <script>
+    const img1 = document.querySelector(".img1"),
+      img2 = document.querySelector(".img2"),
+      winBox = document.querySelector("h1"),
+      button = document.querySelector("button");
+
+    button.addEventListener("click", gameStart)
+
+    function gameStart() {
+      let randomno1 = Math.floor((Math.random() * 6) + 1);
+      let randomno2 = Math.floor((Math.random() * 6) + 1);
+
+      // if (randomno1 === 1) {
+      //   img1.src = "images/dice1.png";
+      // } else if (randomno1 === 2) {
+      //   img1.src = "images/dice2.png";
+      // } else if (randomno1 === 3) {
+      //   img1.src = "images/dice3.png";
+      // } else if (randomno1 === 4) {
+      //   img1.src = "images/dice4.png";
+      // } else if (randomno1 === 5) {
+      //   img1.src = "images/dice5.png";
+      // } else if (randomno1 === 6) {
+      //   img1.src = "images/dice6.png";
+      // }
+      let imgsrc = `images/dice${randomno1}.png`
+      img1.setAttribute("src", imgsrc);
+      // if (randomno2 === 1) {
+      //   img2.src = "images/dice1.png";
+      // } else if (randomno2 === 2) {
+      //   img2.src = "images/dice2.png";
+      // } else if (randomno2 === 3) {
+      //   img2.src = "images/dice3.png";
+      // } else if (randomno2 === 4) {
+      //   img2.src = "images/dice4.png";
+      // } else if (randomno2 === 5) {
+      //   img2.src = "images/dice5.png";
+      // } else if (randomno2 === 6) {
+      //   img2.src = "images/dice6.png";
+      // }
+      let img2src = `images/dice${randomno2}.png`
+      img2.setAttribute("src", img2src);
+
+      winnerTeller(randomno1, randomno2);
+    }
+
+    function winnerTeller(randomno1, randomno2) {
+      if (randomno1 > randomno2) {
+        winBox.innerHTML = "🚩 Player 1 Wins!";
+      } else if (randomno2 > randomno1) {
+        winBox.innerHTML = "Player 2 Wins! 🚩";
+      } else {
+        winBox.innerHTML = "Game Draw! 😮";
+      }
+    }
+  </script>
+</body>
+
+</html>

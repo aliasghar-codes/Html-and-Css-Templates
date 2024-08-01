@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card landing page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>Menu</h3>
+            <i class="ri-menu-3-fill"></i>
+            <ul>
+                <i class="ri-close-line"></i>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Privacy Policy</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <span><i class="ri-aliens-fill"></i></span>
+            <h3>DENTYTECH</h3>
+        </div>
+        <div class="sign">
+            <button>LogIn</button>
+            <button id="bgo">SignUp</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>OUR  ADVANTAGES</h1>
+        <img src="https://images.unsplash.com/photo-1573640076354-ddcbf94b9b09?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="first-img" alt="">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="second-img" alt="">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" id="third-img" alt="">
+        <img src="https://images.unsplash.com/photo-1510258791301-4d7ac469cc46?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="fourth-img" alt="">
+    </main>
+
+    <footer>
+        <div class="left">
+            <div></div>
+            <p>Your Smile Our Passion</p>
+        </div>
+        <div class="middle"><i class="ri-arrow-down-line"></i></div>
+        <div class="right">
+            <div class="logos">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-youtube-line"></i>
+                <i class="ri-facebook-box-line"></i>
+            </div>
+            <p>Best StartUp of 2024</p>
+        </div>
+    </footer>
+    <script>
+        let menuIcon = document.querySelector(".ri-menu-3-fill");
+        let ul = document.querySelector("nav ul");
+        let closeBtn = document.querySelector("nav ul i");
+        closeBtn.addEventListener("click", ()=>{
+            ul.style.right = "120%";
+        })
+        menuIcon.addEventListener("click", ()=>{
+            ul.style.right = "65%";
+        })
+    </script>
+</body>
+</html>
