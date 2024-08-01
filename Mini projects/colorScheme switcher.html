@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Switcher</title>
+</head>
+<style>
+    main{
+        text-align: center;
+    }
+    .container{
+        height: 500px;
+    }
+    .item{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        border: 2px solid black;
+        margin: 30px;
+        border-radius: 5px;
+    }
+    .grey{
+        background-color: grey;
+    }
+    .green{
+        background-color: darkgreen;
+    }
+    .blue{
+        background-color: darkblue;
+    }
+    .black{
+        background-color: yellow;
+    }
+    .red{
+        background-color: rgb(177, 20, 20);
+    }
+</style>
+<body>
+    <main>
+        <h1>Color Scheme Switcher</h1>
+        <div class="container">
+            <span class="item grey" id="item1"></span>
+            <span class="item green" id="item2"></span>
+            <span class="item blue" id="item3"></span>
+            <span class="item black" id="item4"></span>
+            <span class="item red" id="item5"></span>
+        </div>
+        <h2>Try clicking on one of the colors above</h2>
+        <h2>to change the background color of this page!</h2>    
+    </main>
+</body>
+<script>
+    let items = document.querySelectorAll(".item");
+    let body = document.querySelector('body');
+    items.forEach((button)=>{
+        button.addEventListener("click", (e)=>{
+            let idOfE = e.target.id;
+            if(idOfE === "item1"){
+                body.style.backgroundColor = "grey";
+            }
+            else if(idOfE === "item2"){
+                body.style.backgroundColor = "darkgreen";
+            }
+            else if(idOfE === "item3"){
+                body.style.backgroundColor = "darkblue";
+            }
+            else if(idOfE === "item4"){
+                body.style.backgroundColor = "yellow";
+            }
+            else if(idOfE === "item5"){
+                body.style.backgroundColor = "rgb(177, 20, 20)";
+            }
+            else{
+                body.style.backgroundColor = "white";
+            }
+        })
+    })
+</script>
+</html>

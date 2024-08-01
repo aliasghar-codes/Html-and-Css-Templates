@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        #coverImage {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .fis-5 {
+            font-size: 4.25rem !important;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Move It</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Check</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center mt-5">
+        <h1 class=' fw-bolder'>Move with Joy</h1>
+        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, blanditiis similique quos
+            corporis fuga voluptatum voluptas minus eius quo nisi quod aliquid adipisci odit est vitae commodi ea labore
+            eos harum voluptatem aliquam voluptate? Nam, laborum eos. Eligendi quidem mollitia quae aspernatur fugit nam
+            a porro expedita, quam quibusdam autem!</p>
+        <div class="container">
+            <div class="btn btn-primary me-3">Get a Quote</div>
+            <div class="btn btn-outline-secondary">Get a Quote</div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1702575041625-e93d0648b6ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="img-fluid mt-5" alt="..." id="coverImage">
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Why Move With Us?</h1>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <i class="ri-briefcase-2-line fis-5"></i>
+                <h2>Professional</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eaque. Ducimus laudantium aperiam
+                    quaerat blanditiis impedit quod error soluta? Facilis laborum nesciunt libero rem, eligendi tenetur
+                    alias eaque quod quidem ut aspernatur animi odio provident, aperiam corporis eveniet minus et.
+                    Doloremque dolor harum molestias repudiandae repellendus aut, unde aliquid est.</p>
+                <a class="btn btn-link">Get a quote</a><i class="ri-arrow-right-s-line"></i>
+
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="ri-truck-fill fis-5"></i>
+                <h2>Countrywide</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea provident quidem nemo aliquam modi!
+                    Aliquam molestias architecto ab nemo nisi officiis quod beatae ut, tempore ducimus tempora, possimus
+                    eaque enim sint voluptatum quam maxime numquam porro! Vel beatae id ipsa? Laborum laudantium
+                    deleniti officia illum architecto commodi vel sint vero.</p>
+                <a class="btn btn-link">Get a quote</a><i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="ri-chat-smile-line fis-5"></i>
+                <h2>Personal Touch</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab quibusdam nulla corrupti laborum
+                    asperiores cumque voluptate pariatur suscipit vel sint dolore, hic consectetur ea consequuntur nisi
+                    porro fugiat itaque! Nam, voluptates culpa! Exercitationem cumque reiciendis suscipit nesciunt,
+                    facere et voluptate sit velit distinctio dolore quia, ullam ducimus praesentium libero.</p>
+                <a class="btn btn-link">Get a quote</a><i class="ri-arrow-right-s-line"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1702550486434-7155421214b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1641816451947-ee2b5d5c8c1f?q=80&w=2051&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1580685921692-92a5020f63ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-muted">© 2022</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
