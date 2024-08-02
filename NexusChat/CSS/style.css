@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+main > hr {
+    opacity: 0.5;
+    margin: 10vh auto;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+nav > i {
+    display: none;
+}
+.logo img {
+    width: 20vw;
+}
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.links a {
+    color: #6E6D6D;
+    text-decoration: none;
+}
+.links span {
+    color: black;
+}
+.links a:hover {
+    color: black;
+}
+.btnstart a {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: 8px 5px 10px grey;
+    transition: 0.3s ease-in-out;
+}
+.btnstart a:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    box-shadow: none;
+    transition: .6s;
+}
+.btnstart {
+    display: flex;
+    gap: 20px;
+}
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url('https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ************************************************** */
+
+.first {
+    text-align: center;
+    padding-top: 50px;
+}
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+.first p {
+    color: #6E6D6D;
+    line-height: 20px;
+}
+.circlecontain {
+    display: inline-flex;
+    position: absolute;
+    left: 13%;
+    top: 17%;
+}
+.bordercircle {
+    border: 1px solid #6E6D6D;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.maincircle{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: .7rem;
+    cursor: pointer;
+    padding: 40px 20px;
+    position: relative;
+    right: 85px;
+    top: 4px;
+}
+.maincircle i {
+    font-size: 1.2rem;
+}
+.simage {
+    height: 0px;
+}
+.simage img{
+    width: 15vw;
+    height: 25vh;
+    position: relative;
+    left: 40vw;
+    bottom: 30vh;
+}
+main > h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* ************************************************** */
+
+.second {
+    text-align: center;
+    padding-top: 30px;
+}
+.btns {
+    width: 90%;
+    margin: auto;
+}
+.btns > * {
+    background-color: #EBEBEB;
+    border: none;
+    width: 13.5%;
+    height: 7vh;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.special-btn {
+    background-color: black;
+    color: white;
+}
+.second h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.flex {
+    display: flex;
+}
+.cards {
+    width: 33;
+}
+.cards p {
+    color: #6E6D6D;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.cards h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.cardtwo img {
+    width: 100%;
+}
+
+/* ************************************************** */
+
+.third {
+    padding-top: 20px;
+}
+.third a button {
+    display: block;
+    margin: auto;
+    width: 14%;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+    box-shadow: 8px 5px 10px grey;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    cursor: pointer;
+}
+.third a button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    box-shadow: none;
+    transition: .6s;
+}
+.third img {
+    height: 70vh;
+}
+.third h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 3.3rem;
+    font-weight: 900;
+}
+.third p {
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 65%;
+    margin: auto;
+}
+.third-circle{
+    display: inline-flex;
+}
+.third .border-circle {
+    border: 1px solid #6E6D6D;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.third .main-circle {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: .7rem;
+    cursor: pointer;
+    padding: 18px 0;
+    position: relative;
+    right: 85px;
+    top: 4px;
+    font-size: 4rem;
+}
+.third .leftcircle {
+    position: relative;
+    bottom: 30vh;
+}
+.third .rightcircle {
+    position: relative;
+    bottom: 30vh;
+    left: 7%;
+}
+.apps {
+    height: 15vh;
+    margin-bottom: 10vh;
+}
+.apps > *{
+    border: 2px solid black;
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 1.3rem;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.apps i {
+    font-size: 2rem;
+}
+.astore {
+    background-color: black;
+    color: white;
+}
+
+/* ***************************************** */
+
+.fourth h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+.fourth p{
+    font-weight: 700;
+}
+.fourth img {
+    margin: 0 auto;
+    height: 60vh;
+}
+.gridcontainer {
+    padding: 30px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 7vh;
+    display: inline-grid;
+    column-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    box-shadow: 5px 7px 30px grey;
+    border-radius: 5px;
+}
+.blue {
+    color: blue;
+}
+.orange {
+    color: orange;
+}
+.purple {
+    color: purple;
+}
+.griditem p {
+    width: 82%;
+    margin-left: 3px;
+    display: inline-block;
+}
+.griditem i{
+    font-size: 2.3rem;
+}
+
+/* ************************************************ */
+
+.dusra img {
+    width: 20vw;
+}
+.dusra {
+    width: 30%;
+    text-align: center;
+}
+footer {
+    padding-top: 100px;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.footcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.pehla h2 {
+    font-size: 2.2rem;
+}
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.footbutton a {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+.footbutton a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.7s;
+}
+.dusra i {
+    color: black;
+    font-size: 2.5rem;
+}
+
+/* ******************************************************** */
+
+@media screen and (max-width: 767px) {
+    .links, .btnstart {
+        display: none;
+    }
+    .logo img {
+        width: 50vw;
+    }
+    nav i {
+        display: block;
+        font-size: 2.5rem;
+    }
+    .circlecontain {
+        display: none;
+    }
+    .simage {
+        display: none;
+    }
+    .image img {
+        width: 100%;
+    }
+    .first h1 {
+        font-size: 3rem;
+    }
+    .first p {
+        font-size: 1.1rem;
+        margin-bottom: 2vh;
+    }
+    .btns > * {
+        width: 100%;
+        margin: 10px auto;
+        border: .5px solid grey
+    }
+    .cardcontainer {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .cards p {
+        text-align: justify;
+    }
+    .third > button {
+        width: 50%;
+    }
+    .third p {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 3vh;
+    }
+    .third-circle{
+        display: none;
+    }
+    .third img {
+        width: 100%;
+        height: 40vh;
+    }
+    .pcontainer p {
+        text-align: justify;
+    }
+    .apps {
+        height: 100%;
+        margin: 0;
+    }
+    .apps button {
+        margin: 3vh auto;
+    }
+    .fourth img {
+        width: 100%;
+        height: 35vh;
+    }
+    .gridcontainer {
+        box-shadow: 0;
+        grid-template-columns: 50% 50%;
+        row-gap: 3vh;
+    }
+    .griditem i {
+        font-size: 1.5rem;
+    }
+    .griditem {
+        display: flex;
+        align-items: center;
+    }
+    .griditem p {
+        width: 80%;
+    }
+    .footcontainer {
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .pehla h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .dusra {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .dusra i {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    .dusra img {
+        width: 290px;
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        height: 80vh;
+    }
+    .third a button {
+        width: 70vw;
+        height: 10vh;
+    }
+}
