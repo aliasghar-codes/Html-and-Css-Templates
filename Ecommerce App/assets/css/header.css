@@ -1,0 +1,151 @@
+.header-top{
+    background-color: var(--color-dark-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+}
+.header-top p{
+    color: #FAFAFA;
+    font-weight: 400;
+}
+.header-top a{
+    font-weight: 700;
+    margin-left: 1rem;
+    color: var(--color-white-1);
+    font-size: 1.8rem;
+    text-decoration: underline;
+    transition: .4s ease;
+}
+.header-top a:hover{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+}
+
+/* *****************header-bottom************ */
+
+.header-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 6.5vw;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--color-dark-2);
+    width: 100%;
+}
+.header-bottom ul{
+    display: flex;
+    gap: 5rem;
+}
+.header-bottom ul li:first-child{
+    border-bottom: 1px solid var(--color-dark-2);
+}
+.header-bottom ul li:hover{
+    border-bottom: 1px solid var(--color-dark-2);
+}
+.header-bottom > a{
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: 800;
+}
+.header-bottom > a:hover{
+    color: #a53434;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+.header-bottom form{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white-2);
+    padding: .7vw 1vw;
+    border-radius: 5px;
+}
+.header-bottom form input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.user img{
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.mobile-nav{
+    border-top: 1px solid var(--color-dark-2);
+    z-index: 99;
+    position: absolute;
+    left: 105%;
+    bottom: 0;
+    height: 88vh;
+    background-color: var(--color-white-2);
+    width: 100%;
+    color: black;
+    padding-top: 5vh;
+    transition: all 5s ease;
+    display: none;
+}
+.mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.mobile-nav li{
+    border-radius: 5px;
+    margin: .5vh auto;
+    background-color: #d4d4d4;
+    width: 80%;
+    text-align: center;
+    padding: 2.5vh;
+}
+.mobile-nav li a{
+    padding: 2.5vh 27vw;
+}
+@media screen and (max-width: 1070px) {
+    .header-top{
+        font-size: 1.4rem;
+    }
+    .header-top a{
+        font-size: 1.4rem;
+    }
+    .header-bottom > a{
+        font-size: 2.3rem;
+    }
+    .header-bottom ul{
+        gap: 2vw;
+    }
+    .header-bottom ul a{
+        font-size: 1.5rem;
+    }
+    .header-bottom form input{
+        font-size: 1.1rem;
+    }
+    .user img{
+        width: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .header-top{
+        font-size: .8rem;
+        height: 4vh;
+    }
+    .header-top a{
+        font-size: .8rem;
+    }
+    .header-bottom ul.pc-nav, .header-bottom .user{
+        display: none;
+    }
+    .header-bottom{
+        height: 8vh;
+    }
+    .hamburger{
+        display: block;
+        font-size: 2.3rem;
+        cursor: pointer;
+    }
+}

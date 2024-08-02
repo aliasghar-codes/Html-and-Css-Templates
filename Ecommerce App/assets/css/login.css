@@ -1,0 +1,13 @@
+.buttons button{
+    width: 30%;
+    margin: 0;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin: 5vh 0;
+}
+.buttons a{
+    color: var(--color-primary);
+}

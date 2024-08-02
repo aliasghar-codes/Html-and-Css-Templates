@@ -1,0 +1,510 @@
+.main-top{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15vh;
+}
+.main-top ul{
+    border-right: 1px solid var(--color-dark-2);
+    padding-top: 3vw;
+    width: 15vw;
+}
+.main-top ul li{
+    margin-bottom: 3vh;
+}
+.main-top a img{
+    padding-left: 3vw;
+    padding-top: 3vw;
+    border-radius: 2px;
+    width: 70vw;
+}
+/* ************first-section************** */
+.first-section{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding-bottom: 50px;
+}
+.today{
+    color: var(--color-primary);
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    border-left: 1.8rem solid var(--color-primary);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-bottom: 2vh;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 23%;
+}
+.first-section .sale{
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+    gap: 14rem;
+}
+.first-section .sale h2{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.first-section .sale .clock .heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .5vw;
+}
+.first-section .sale .clock .timing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5rem;
+    gap: 2rem;
+}
+.first-section .sale .clock .timing span{
+    color: var(--color-primary);
+}
+.card-top{
+    background-color: #f5f5f5;
+    padding: 8vh 0;
+    height: 40vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card-top p{
+    background-color: var(--color-primary);
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    left: 15px;
+    top: 15px;
+}
+.card-top .icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.card-top .icons i{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.card-top h4{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+    padding: 1.5vh 0;
+    opacity: 0;
+    transition: .3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card .price{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .price p:first-child{
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.card .price p:last-child{
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(156, 156, 156);
+}
+.card .rating{
+    margin-bottom: 50px;
+}
+.card .rating i{
+    color: #FFAD33;
+    font-size: 2rem;
+}
+.card .rating span{
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* **********second-section***************** */
+.second-section{
+    padding-top: 10vh;
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+.second-section h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 5vh;
+}
+.cards-two{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10vh 0;
+}
+.card-two{
+    border: 2px solid rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 5vh 0;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.card-two:hover{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+.card-two i{
+    font-weight: 100;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+/* ***********third-section************** */
+.third-section{
+    padding-top: 10vh;
+    margin-bottom: 15vh;
+}
+.third-section h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+.third-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.third-heading a{
+    margin: 0;
+}
+/* ***********fourth-section**************** */
+.fourth-section{
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 8vh;
+}
+.fourth-left{
+    width: 35%;
+}
+.fourth-left h3{
+    color: #00FF66;
+}
+.fourth-left h2{
+    font-weight: 600;
+    color: white;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.fourth-left a{
+    color: white;
+    background-color: #00b649;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+}
+.fourth-left a:hover{
+    background-color: #00e25a;
+}
+/* **********fifth-section****************** */
+.fifth-section{
+    padding-top: 20vh;
+    margin-bottom: 10vh;
+}
+.fifth-section h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+/* ************sixth-section*************** */
+.sixth-section{
+    padding-top: 10vh;
+}
+.sixth-section h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+.sixth-container{
+    color: white; 
+    display: grid;
+    grid-template-columns: 45% 25% 25%;
+    grid-template-rows: 45vh 45vh;
+    gap: 25px;
+}
+.sixth-container h3{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.sixth-left{
+    background-image: url("../images/ps5.png");
+    background-color: #0d0d0d;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 5px;
+    padding: 5vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    grid-row: 1 / span 2;
+}
+.sixth-container p{
+    width: 60%;
+    margin: 2vh 0;
+    color: rgb(201, 200, 200);
+    line-height: 2.2rem;
+}
+.sixth-section a{
+    color: rgb(201, 200, 200);
+    text-decoration: underline;
+    transition: .2s ease;
+}
+.sixth-section a:hover{
+    color: white;
+}
+.sixth-right-top{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 2;
+    justify-content: end;
+    padding: 5vh;
+    background-image: url("../images/woman.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80%;
+    border-radius: 5px;
+}
+.sixth-right-top p{
+    width: 50%;
+}
+.sixth-right-bottom-1{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5vh;
+    border-radius: 5px;
+    background-image: url("../images/speakers.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sixth-right-bottom-1 p, .sixth-right-bottom-2 p{
+    width: 100%;
+    margin: 1.3vh 0;
+    font-size: 1.5rem;
+}
+.sixth-right-bottom-1 a, .sixth-right-bottom-2 a{
+    font-size: 1.3rem;
+}
+.sixth-right-bottom-2{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5vh;
+    border-radius: 5px;
+    background-image: url("../images/perfumes.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ************seventh-section*********************** */
+.seventh-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25vh auto;
+    justify-content: space-around;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service h3{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 2.2rem;
+}
+.service p{
+    font-size: 1.5rem;
+}
+
+/* *******media-queries********** */
+@media screen and (max-width: 1070px){
+    .main-top ul{
+        width: 35%;
+    }
+    .main-top ul li{
+        margin-bottom: 2vh;
+    }
+    .main-top a img{
+        padding-top: 3vw;
+        width: 100%;
+    }
+    .card{
+        width: 47%;
+    }
+    .card-two{
+        width: 30%;
+        margin-bottom: 5vh;
+    }
+    .today{
+        font-size: 3rem;
+    }
+    .third-heading a{
+        width: 20vw;
+    }
+    .fourth-section{
+        padding: 10vh 3vh;
+    }
+    .fourth-left{
+        width: 40%;
+    }
+    .fourth-right img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .fourth-left h2{
+        font-size: 3rem;
+    }
+    .service{
+        width: 50%;
+        margin-bottom: 6vh;
+    }
+    .service img{
+        width: 40%;
+    }
+    .sixth-container{
+        grid-template-columns: 50% 50%;
+    }
+    .sixth-left{
+        grid-column: 1 / span 2;
+    }
+    .sixth-right-top{
+        grid-column: 1 / span 2;
+    }
+    .sixth-right-bottom-1,  .sixth-right-bottom-2{
+        grid-row: 4;
+        background-size: 40%;
+    }
+}
+@media screen and (max-width: 765px) {
+    .main-top ul{
+        width: 35vw;
+    }
+    .main-top a img{
+        margin-left: 1rem;
+        height: 50vh;
+    }
+    .main-top ul li a{
+        font-size: 1rem;
+    }
+    .today{
+        font-size: 1.5rem;
+    }
+    .first-section .sale{
+        gap: 10rem
+    }
+    .first-section .sale h2{
+        font-size: 1.8rem;
+    }
+    .first-section .sale .clock .heading{
+        gap: 1rem;
+        font-size: .7rem;
+    }
+    .first-section .sale .clock .timing{
+        font-size: 2rem;
+        gap: 1rem;
+    }
+    .card{
+        width: 100%;
+    }
+    .second-section h2, .third-section h2, .fifth-section h2, .sixth-section h2{
+        font-size: 2.2rem;
+    }
+    .card h3{
+        font-size: 1.7rem;
+    }
+    .card i{
+        font-size: 1rem;
+    }
+    .card-two{
+        width: 48%;
+    }
+    .fourth-section{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 7vh 2vh;
+    }
+    .fourth-left{
+        margin-bottom: 10vh;
+        width: 100%;
+    }
+    .service{
+        width: 100%;
+        margin-bottom: 8vh;
+    }
+    .service h3{
+        font-size: 1.8rem;
+    }
+    .sixth-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sixth-container h3{
+        font-size: .5rem;
+    }
+    .sixth-container p{
+        font-size: 1rem;
+    }
+    .sixth-container a{
+        font-size: 1rem;
+    }
+    .sixth-left{
+        height: 50vh;
+    }
+    .sixth-right-top{
+        grid-column: 1 / span 2;
+    }
+    .sixth-right-bottom-1,  .sixth-right-bottom-2{
+        background-position: right;
+        background-size: 30%;
+    }
+}
